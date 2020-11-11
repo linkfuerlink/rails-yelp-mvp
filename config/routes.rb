@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   # POST 'restaurants/:id/reviews', to: 'reviews#create'
 
   resources :restaurants do
-    resources :reviews, only: [:new, :create]
+    resources :reviews, only: [:create]
   end
 end
